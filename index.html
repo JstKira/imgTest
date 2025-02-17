@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>Infinite Carousel</title>⏳
-    <!-- link to css file -->⏳⏳
-    <link rel="stylesheet" href="style.css">⏳
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إمبراطورية لاست | الرئيسية</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>⏳
-    <div class="carousel">⏳
-        <div class="image-container">⏳
-            <img src="image/1.jpg" alt="">
-            <img src="image/2.jpg" alt="">
-            <img src="image/3.jpg" alt="">
-            <img src="image/4.jpg" alt="">
-            <img src="image/5.jpg" alt="">
-            <img src="image/6.jpg" alt="">
-            <img src="image/7.jpg" alt="">
-            <img src="image/8.png" alt="">
-        </div>⏳
-    </div>⏳
+<body>
+    <header>
+        <h1>إمبراطورية لاست - عالم الأنمي</h1>
+        <nav>
+            <a href="index.html">🏰 الرئيسية</a>
+            <a href="characters.html">👥 الشخصيات</a>
+            <a href="news.html">📰 الأخبار</a>
+            <a href="store.html">🛒 المتجر</a>
+            <a href="classified.html">🎖️ المصنفين</a>
+        </nav>
+    </header>
+
+    <!-- 🎠 الكاروسيل -->
+    <div class="carousel">
+        <button class="prev-btn">❮</button>
+        <div class="image-container">
+            <img src="images/anime1.jpg" alt="أنمي 1" loading="lazy">
+            <img src="images/anime2.jpg" alt="أنمي 2" loading="lazy">
+            <img src="images/anime3.jpg" alt="أنمي 3" loading="lazy">
+            <img src="images/anime4.jpg" alt="أنمي 4" loading="lazy">
+        </div>
+        <button class="next-btn">❯</button>
+    </div>
+
+    <section class="intro">
+        <h2>✨ عالم إمبراطورية لاست</h2>
+        <p>انضم إلى عالم الأنمي الملحمي، حيث الممالك، القتال، والتحديات القوية!</p>
+        <a href="characters.html" class="button">استكشف الشخصيات</a>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
