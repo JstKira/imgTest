@@ -1,39 +1,79 @@
-body{
+/* 🏰 تحسين الخلفية */
+body {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-family: "Tajawal", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    direction: rtl;
+}
+
+/* 🛠️ تحسين شريط التنقل */
+nav {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* 🎠 الكاروسيل */
+.carousel {
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #a5b1c2;
-}⏳⏳⏳
-
-.carousel{
+    position: relative;
+    width: 320px;
+    height: 150px;
+    margin: 20px auto;
     overflow: hidden;
-    width: 700px;
-    background-color: #1e272e;
-    padding: 30px 0;
-    margin-top: 60px;
-    border-radius: 5px;
-    box-shadow: 20px 35px 35px rgba(0, 0, 0, 0.5);
-}⏳⏳⏳
+    border-radius: 10px;
+}
 
-.image-container{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 250px;
-    justify-items: stretch;
-    animation: animation 12s linear infinite;
-}⏳⏳⏳
+.image-container {
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease-in-out;
+}
 
-.image-container img{
-    width: 200px;
-    height: 270px;
-    border-radius: 12px;
+.image-container img {
+    width: 320px;
+    height: 150px;
     object-fit: cover;
-    border: 1px solid #a5b1c2;
-}⏳⏳⏳
+    border-radius: 10px;
+}
 
-@keyframes animation {
-    to{
-        translate: calc(-4*250px);
-    }
+/* ⬅️➡️ أزرار التحكم */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
